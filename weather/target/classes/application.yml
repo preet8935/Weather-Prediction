@@ -1,0 +1,21 @@
+logging:
+    level:
+        org:
+            springframework:
+                ws: ERROR
+
+management:
+    endpoints:
+        web:
+            exposure:
+                include: '*'
+
+spring:
+
+    devtools:
+        restart:
+            additional-paths: /resources
+        
+feign:
+    client:
+       url: https://samples.openweathermap.org/data/2.5/forecast?q=&appid=d2929e9483efc82c82c32ee7e02d563e
